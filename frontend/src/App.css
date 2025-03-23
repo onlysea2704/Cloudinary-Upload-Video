@@ -1,0 +1,107 @@
+/* Tổng quan */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Khung chính */
+.container {
+  text-align: center;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tiêu đề */
+h2 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Nút chọn file */
+.file-input {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.file-input:hover {
+  background: #0056b3;
+}
+
+.file-input input {
+  display: none;
+}
+
+/* Nút upload */
+.upload-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.upload-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.upload-btn:hover {
+  background: #218838;
+}
+
+/* Video Preview */
+.video-preview, .preview-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.video-preview h3, .preview-container h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.video-preview video, .preview-container video {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-preview a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.video-preview a:hover {
+  text-decoration: underline;
+}
